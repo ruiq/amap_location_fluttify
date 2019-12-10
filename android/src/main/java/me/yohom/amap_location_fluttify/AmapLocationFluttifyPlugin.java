@@ -29,6 +29,1866 @@ public class AmapLocationFluttifyPlugin implements MethodChannel.MethodCallHandl
     private Registrar registrar;
 
     private final Map<String, Handler> handlerMap = new HashMap<String, Handler>() {{
+        // getter
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::get_mLocScene", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            byte result = ref.mLocScene;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.network.HttpRequest::get_url", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpRequest ref = (com.amap.location.common.network.HttpRequest) getHEAP().get(refId);
+        
+            String result = ref.url;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.network.HttpRequest::get_body", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpRequest ref = (com.amap.location.common.network.HttpRequest) getHEAP().get(refId);
+        
+            byte[] result = ref.body;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.network.HttpRequest::get_timeout", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpRequest ref = (com.amap.location.common.network.HttpRequest) getHEAP().get(refId);
+        
+            int result = ref.timeout;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.network.HttpResponse::get_statusCode", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpResponse ref = (com.amap.location.common.network.HttpResponse) getHEAP().get(refId);
+        
+            int result = ref.statusCode;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.network.HttpResponse::get_body", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpResponse ref = (com.amap.location.common.network.HttpResponse) getHEAP().get(refId);
+        
+            byte[] result = ref.body;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_type", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            int result = ref.type;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_rssi", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            int result = ref.rssi;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_lac", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            int result = ref.lac;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_cid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            int result = ref.cid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_sid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            int result = ref.sid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_nid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            int result = ref.nid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_bid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            int result = ref.bid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::get_lastUpdateTimeMills", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            long result = ref.lastUpdateTimeMills;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus::get_updateTime", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            long result = ref.updateTime;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus::get_cellType", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            int result = ref.cellType;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus::get_networkOperator", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            String result = ref.networkOperator;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus::get_mainCell", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            com.amap.location.common.model.CellState result = ref.mainCell;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
+        put("com.amap.location.common.model.CellStatus::get_mainCell2", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            com.amap.location.common.model.CellState result = ref.mainCell2;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_type", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.type;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_mcc", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.mcc;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_mnc", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.mnc;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_lac", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.lac;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_cid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.cid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_sid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.sid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_nid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.nid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_bid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.bid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_signalStrength", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.signalStrength;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_latitude", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.latitude;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_longitude", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            int result = ref.longitude;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_lastUpdateTimeMills", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            long result = ref.lastUpdateTimeMills;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_lastUpdateUtcMills", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            long result = ref.lastUpdateUtcMills;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_registered", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            boolean result = ref.registered;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.CellState::get_newapi", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            boolean result = ref.newapi;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_mac", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            long result = ref.mac;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_ssid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            String result = ref.ssid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_rssi", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            int result = ref.rssi;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_frequency", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            int result = ref.frequency;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_timestamp", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            long result = ref.timestamp;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_lastUpdateUtcMills", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            long result = ref.lastUpdateUtcMills;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_type", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            int result = ref.type;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WiFi::get_connected", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            boolean result = ref.connected;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.HisLocation::get_time", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            long result = ref.time;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.HisLocation::get_lon", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            int result = ref.lon;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.HisLocation::get_lat", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            int result = ref.lat;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.HisLocation::get_radius", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            int result = ref.radius;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.HisLocation::get_locType", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            int result = ref.locType;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.HisLocation::get_retype", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            int result = ref.retype;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.HisLocation::get_subretype", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            int result = ref.subretype;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WifiStatus::get_updateTime", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            long result = ref.updateTime;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.WifiStatus::get_mainWifi", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            com.amap.location.common.model.WiFi result = ref.mainWifi;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
+        put("com.amap.location.common.model.FPS::get_cellStatus", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            com.amap.location.common.model.CellStatus result = ref.cellStatus;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
+        put("com.amap.location.common.model.FPS::get_wifiStatus", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            com.amap.location.common.model.WifiStatus result = ref.wifiStatus;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
+        put("com.amap.location.common.model.FPS::get_latitude", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            double result = ref.latitude;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.FPS::get_longitude", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            double result = ref.longitude;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.FPS::get_accuracy", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            double result = ref.accuracy;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.common.model.FPS::get_provider", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            byte result = ref.provider;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_productId", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            byte result = ref.productId;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_packageName", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.packageName;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_productVersion", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.productVersion;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_adiu", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.adiu;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_imei", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.imei;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_imsi", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.imsi;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_uuid", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.uuid;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_license", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.license;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_mapKey", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String result = ref.mapKey;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_locEnable", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            boolean result = ref.locEnable;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_contentProviderList", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            String[] result = ref.contentProviderList;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.OfflineConfig::get_uploadConfig", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            com.amap.location.offline.upload.UploadConfig result = ref.uploadConfig;
+        
+            getHEAP().put(result.hashCode(), result);
+        
+            methodResult.success(result.hashCode());
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_bufferSize", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            long result = ref.bufferSize;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_maxDbSize", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            long result = ref.maxDbSize;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_expireTimeInDb", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            long result = ref.expireTimeInDb;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_storePeriod", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            long result = ref.storePeriod;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_uploadPeriod", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            long result = ref.uploadPeriod;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_sizePerRequest", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            long result = ref.sizePerRequest;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_maxSizePerDay", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            long result = ref.maxSizePerDay;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // getter
+        put("com.amap.location.offline.upload.UploadConfig::get_nonWifiEnable", (args, methodResult) -> {
+            // ref object
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            boolean result = ref.nonWifiEnable;
+        
+        
+        
+            methodResult.success(result);
+        });
+        // setter
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::set_mLocScene", (args, methodResult) -> {
+            // jsonable arg
+            byte mLocScene = (byte) args.get("mLocScene");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            ref.mLocScene = mLocScene;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.network.HttpRequest::set_url", (args, methodResult) -> {
+            // jsonable arg
+            String url = (String) args.get("url");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpRequest ref = (com.amap.location.common.network.HttpRequest) getHEAP().get(refId);
+        
+            ref.url = url;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.network.HttpRequest::set_body", (args, methodResult) -> {
+            // jsonable arg
+            byte[] body = (byte[]) args.get("body");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpRequest ref = (com.amap.location.common.network.HttpRequest) getHEAP().get(refId);
+        
+            ref.body = body;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.network.HttpRequest::set_timeout", (args, methodResult) -> {
+            // jsonable arg
+            int timeout = (int) args.get("timeout");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpRequest ref = (com.amap.location.common.network.HttpRequest) getHEAP().get(refId);
+        
+            ref.timeout = timeout;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.network.HttpResponse::set_statusCode", (args, methodResult) -> {
+            // jsonable arg
+            int statusCode = (int) args.get("statusCode");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpResponse ref = (com.amap.location.common.network.HttpResponse) getHEAP().get(refId);
+        
+            ref.statusCode = statusCode;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.network.HttpResponse::set_body", (args, methodResult) -> {
+            // jsonable arg
+            byte[] body = (byte[]) args.get("body");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.HttpResponse ref = (com.amap.location.common.network.HttpResponse) getHEAP().get(refId);
+        
+            ref.body = body;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_type", (args, methodResult) -> {
+            // jsonable arg
+            int type = (int) args.get("type");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.type = type;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_rssi", (args, methodResult) -> {
+            // jsonable arg
+            int rssi = (int) args.get("rssi");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.rssi = rssi;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_lac", (args, methodResult) -> {
+            // jsonable arg
+            int lac = (int) args.get("lac");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.lac = lac;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_cid", (args, methodResult) -> {
+            // jsonable arg
+            int cid = (int) args.get("cid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.cid = cid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_sid", (args, methodResult) -> {
+            // jsonable arg
+            int sid = (int) args.get("sid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.sid = sid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_nid", (args, methodResult) -> {
+            // jsonable arg
+            int nid = (int) args.get("nid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.nid = nid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_bid", (args, methodResult) -> {
+            // jsonable arg
+            int bid = (int) args.get("bid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.bid = bid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus.HistoryCell::set_lastUpdateTimeMills", (args, methodResult) -> {
+            // jsonable arg
+            long lastUpdateTimeMills = (long) args.get("lastUpdateTimeMills");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            ref.lastUpdateTimeMills = lastUpdateTimeMills;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus::set_updateTime", (args, methodResult) -> {
+            // jsonable arg
+            long updateTime = (long) args.get("updateTime");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            ref.updateTime = updateTime;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus::set_cellType", (args, methodResult) -> {
+            // jsonable arg
+            int cellType = (int) args.get("cellType");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            ref.cellType = cellType;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus::set_networkOperator", (args, methodResult) -> {
+            // jsonable arg
+            String networkOperator = (String) args.get("networkOperator");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            ref.networkOperator = networkOperator;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus::set_mainCell", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.common.model.CellState mainCell = (com.amap.location.common.model.CellState) getHEAP().get((int) args.get("mainCell"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            ref.mainCell = mainCell;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellStatus::set_mainCell2", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.common.model.CellState mainCell2 = (com.amap.location.common.model.CellState) getHEAP().get((int) args.get("mainCell2"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            ref.mainCell2 = mainCell2;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_type", (args, methodResult) -> {
+            // jsonable arg
+            int type = (int) args.get("type");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.type = type;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_mcc", (args, methodResult) -> {
+            // jsonable arg
+            int mcc = (int) args.get("mcc");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.mcc = mcc;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_mnc", (args, methodResult) -> {
+            // jsonable arg
+            int mnc = (int) args.get("mnc");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.mnc = mnc;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_lac", (args, methodResult) -> {
+            // jsonable arg
+            int lac = (int) args.get("lac");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.lac = lac;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_cid", (args, methodResult) -> {
+            // jsonable arg
+            int cid = (int) args.get("cid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.cid = cid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_sid", (args, methodResult) -> {
+            // jsonable arg
+            int sid = (int) args.get("sid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.sid = sid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_nid", (args, methodResult) -> {
+            // jsonable arg
+            int nid = (int) args.get("nid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.nid = nid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_bid", (args, methodResult) -> {
+            // jsonable arg
+            int bid = (int) args.get("bid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.bid = bid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_signalStrength", (args, methodResult) -> {
+            // jsonable arg
+            int signalStrength = (int) args.get("signalStrength");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.signalStrength = signalStrength;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_latitude", (args, methodResult) -> {
+            // jsonable arg
+            int latitude = (int) args.get("latitude");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.latitude = latitude;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_longitude", (args, methodResult) -> {
+            // jsonable arg
+            int longitude = (int) args.get("longitude");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.longitude = longitude;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_lastUpdateTimeMills", (args, methodResult) -> {
+            // jsonable arg
+            long lastUpdateTimeMills = (long) args.get("lastUpdateTimeMills");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.lastUpdateTimeMills = lastUpdateTimeMills;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_lastUpdateUtcMills", (args, methodResult) -> {
+            // jsonable arg
+            long lastUpdateUtcMills = (long) args.get("lastUpdateUtcMills");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.lastUpdateUtcMills = lastUpdateUtcMills;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_registered", (args, methodResult) -> {
+            // jsonable arg
+            boolean registered = (boolean) args.get("registered");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.registered = registered;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.CellState::set_newapi", (args, methodResult) -> {
+            // jsonable arg
+            boolean newapi = (boolean) args.get("newapi");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            ref.newapi = newapi;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_mac", (args, methodResult) -> {
+            // jsonable arg
+            long mac = (long) args.get("mac");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.mac = mac;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_ssid", (args, methodResult) -> {
+            // jsonable arg
+            String ssid = (String) args.get("ssid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.ssid = ssid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_rssi", (args, methodResult) -> {
+            // jsonable arg
+            int rssi = (int) args.get("rssi");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.rssi = rssi;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_frequency", (args, methodResult) -> {
+            // jsonable arg
+            int frequency = (int) args.get("frequency");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.frequency = frequency;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_timestamp", (args, methodResult) -> {
+            // jsonable arg
+            long timestamp = (long) args.get("timestamp");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.timestamp = timestamp;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_lastUpdateUtcMills", (args, methodResult) -> {
+            // jsonable arg
+            long lastUpdateUtcMills = (long) args.get("lastUpdateUtcMills");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.lastUpdateUtcMills = lastUpdateUtcMills;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_type", (args, methodResult) -> {
+            // jsonable arg
+            int type = (int) args.get("type");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.type = type;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WiFi::set_connected", (args, methodResult) -> {
+            // jsonable arg
+            boolean connected = (boolean) args.get("connected");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            ref.connected = connected;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.HisLocation::set_time", (args, methodResult) -> {
+            // jsonable arg
+            long time = (long) args.get("time");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            ref.time = time;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.HisLocation::set_lon", (args, methodResult) -> {
+            // jsonable arg
+            int lon = (int) args.get("lon");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            ref.lon = lon;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.HisLocation::set_lat", (args, methodResult) -> {
+            // jsonable arg
+            int lat = (int) args.get("lat");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            ref.lat = lat;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.HisLocation::set_radius", (args, methodResult) -> {
+            // jsonable arg
+            int radius = (int) args.get("radius");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            ref.radius = radius;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.HisLocation::set_locType", (args, methodResult) -> {
+            // jsonable arg
+            int locType = (int) args.get("locType");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            ref.locType = locType;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.HisLocation::set_retype", (args, methodResult) -> {
+            // jsonable arg
+            int retype = (int) args.get("retype");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            ref.retype = retype;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.HisLocation::set_subretype", (args, methodResult) -> {
+            // jsonable arg
+            int subretype = (int) args.get("subretype");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            ref.subretype = subretype;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WifiStatus::set_updateTime", (args, methodResult) -> {
+            // jsonable arg
+            long updateTime = (long) args.get("updateTime");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            ref.updateTime = updateTime;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.WifiStatus::set_mainWifi", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.common.model.WiFi mainWifi = (com.amap.location.common.model.WiFi) getHEAP().get((int) args.get("mainWifi"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            ref.mainWifi = mainWifi;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.FPS::set_cellStatus", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.common.model.CellStatus cellStatus = (com.amap.location.common.model.CellStatus) getHEAP().get((int) args.get("cellStatus"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            ref.cellStatus = cellStatus;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.FPS::set_wifiStatus", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.common.model.WifiStatus wifiStatus = (com.amap.location.common.model.WifiStatus) getHEAP().get((int) args.get("wifiStatus"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            ref.wifiStatus = wifiStatus;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.FPS::set_latitude", (args, methodResult) -> {
+            // jsonable arg
+            double latitude = (double) args.get("latitude");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            ref.latitude = latitude;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.FPS::set_longitude", (args, methodResult) -> {
+            // jsonable arg
+            double longitude = (double) args.get("longitude");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            ref.longitude = longitude;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.FPS::set_accuracy", (args, methodResult) -> {
+            // jsonable arg
+            double accuracy = (double) args.get("accuracy");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            ref.accuracy = accuracy;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.common.model.FPS::set_provider", (args, methodResult) -> {
+            // jsonable arg
+            byte provider = (byte) args.get("provider");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            ref.provider = provider;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_productId", (args, methodResult) -> {
+            // jsonable arg
+            byte productId = (byte) args.get("productId");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.productId = productId;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_packageName", (args, methodResult) -> {
+            // jsonable arg
+            String packageName = (String) args.get("packageName");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.packageName = packageName;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_productVersion", (args, methodResult) -> {
+            // jsonable arg
+            String productVersion = (String) args.get("productVersion");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.productVersion = productVersion;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_adiu", (args, methodResult) -> {
+            // jsonable arg
+            String adiu = (String) args.get("adiu");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.adiu = adiu;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_imei", (args, methodResult) -> {
+            // jsonable arg
+            String imei = (String) args.get("imei");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.imei = imei;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_imsi", (args, methodResult) -> {
+            // jsonable arg
+            String imsi = (String) args.get("imsi");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.imsi = imsi;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_uuid", (args, methodResult) -> {
+            // jsonable arg
+            String uuid = (String) args.get("uuid");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.uuid = uuid;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_license", (args, methodResult) -> {
+            // jsonable arg
+            String license = (String) args.get("license");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.license = license;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_mapKey", (args, methodResult) -> {
+            // jsonable arg
+            String mapKey = (String) args.get("mapKey");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.mapKey = mapKey;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_locEnable", (args, methodResult) -> {
+            // jsonable arg
+            boolean locEnable = (boolean) args.get("locEnable");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.locEnable = locEnable;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_contentProviderList", (args, methodResult) -> {
+            // jsonable arg
+            List<String> contentProviderList = (List<String>) args.get("contentProviderList");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.contentProviderList = contentProviderList.toArray(new String[contentProviderList.size()]);
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_mLocateLogRecorder", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.offline.OfflineConfig.ILocateLogRecorder mLocateLogRecorder = (com.amap.location.offline.OfflineConfig.ILocateLogRecorder) getHEAP().get((int) args.get("mLocateLogRecorder"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.mLocateLogRecorder = mLocateLogRecorder;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_httpClient", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.common.network.IHttpClient httpClient = (com.amap.location.common.network.IHttpClient) getHEAP().get((int) args.get("httpClient"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.httpClient = httpClient;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_uploadConfig", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.offline.upload.UploadConfig uploadConfig = (com.amap.location.offline.upload.UploadConfig) getHEAP().get((int) args.get("uploadConfig"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.uploadConfig = uploadConfig;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.OfflineConfig::set_coordinateConverter", (args, methodResult) -> {
+            // ref arg
+            com.amap.location.offline.OfflineConfig.ICoordinateConverter coordinateConverter = (com.amap.location.offline.OfflineConfig.ICoordinateConverter) getHEAP().get((int) args.get("coordinateConverter"));
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig ref = (com.amap.location.offline.OfflineConfig) getHEAP().get(refId);
+        
+            ref.coordinateConverter = coordinateConverter;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_bufferSize", (args, methodResult) -> {
+            // jsonable arg
+            long bufferSize = (long) args.get("bufferSize");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.bufferSize = bufferSize;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_maxDbSize", (args, methodResult) -> {
+            // jsonable arg
+            long maxDbSize = (long) args.get("maxDbSize");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.maxDbSize = maxDbSize;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_expireTimeInDb", (args, methodResult) -> {
+            // jsonable arg
+            long expireTimeInDb = (long) args.get("expireTimeInDb");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.expireTimeInDb = expireTimeInDb;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_storePeriod", (args, methodResult) -> {
+            // jsonable arg
+            long storePeriod = (long) args.get("storePeriod");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.storePeriod = storePeriod;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_uploadPeriod", (args, methodResult) -> {
+            // jsonable arg
+            long uploadPeriod = (long) args.get("uploadPeriod");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.uploadPeriod = uploadPeriod;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_sizePerRequest", (args, methodResult) -> {
+            // jsonable arg
+            long sizePerRequest = (long) args.get("sizePerRequest");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.sizePerRequest = sizePerRequest;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_maxSizePerDay", (args, methodResult) -> {
+            // jsonable arg
+            long maxSizePerDay = (long) args.get("maxSizePerDay");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.maxSizePerDay = maxSizePerDay;
+            methodResult.success("success");
+        });
+        // setter
+        put("com.amap.location.offline.upload.UploadConfig::set_nonWifiEnable", (args, methodResult) -> {
+            // jsonable arg
+            boolean nonWifiEnable = (boolean) args.get("nonWifiEnable");
+        
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.upload.UploadConfig ref = (com.amap.location.offline.upload.UploadConfig) getHEAP().get(refId);
+        
+            ref.nonWifiEnable = nonWifiEnable;
+            methodResult.success("success");
+        });
+        // method
+        put("com.autonavi.httpdns.HttpDnsManager::getIpByHostAsync", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.httpdns.HttpDnsManager ref = (com.autonavi.httpdns.HttpDnsManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.httpdns.HttpDnsManager@" + refId + "::getIpByHostAsync(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getIpByHostAsync(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.autonavi.httpdns.HttpDnsManager::getIpsByHostAsync", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.autonavi.httpdns.HttpDnsManager ref = (com.autonavi.httpdns.HttpDnsManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.autonavi.httpdns.HttpDnsManager@" + refId + "::getIpsByHostAsync(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String[] result;
+            try {
+                result = ref.getIpsByHostAsync(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(new ArrayList<String>(java.util.Arrays.asList(result)));
+        });
         // method
         put("com.autonavi.aps.amapapi.model.AMapLocationServer::toStr", (args, methodResult) -> {
             // args
@@ -55,6 +1915,7800 @@ public class AmapLocationFluttifyPlugin implements MethodChannel.MethodCallHandl
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionManagerProxy::init", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+            // ref arg
+            com.amap.location.collection.CollectionConfig var2 = (com.amap.location.collection.CollectionConfig) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionManagerProxy ref = (com.amap.location.collection.CollectionManagerProxy) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionManagerProxy@" + refId + "::init(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.init(var1, var2, new com.amap.location.common.network.IHttpClient() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.location.collection.CollectionManagerProxy::init::Callback");
+        
+                // call dart method
+                @Override
+                public com.amap.location.common.network.HttpResponse post(com.amap.location.common.network.HttpRequest var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: post(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // ref arg
+                    int argvar1 = var1.hashCode();
+                    getHEAP().put(argvar1, var1);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.common.network.IHttpClient::post",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+                    return null;
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionManagerProxy::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionManagerProxy ref = (com.amap.location.collection.CollectionManagerProxy) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionManagerProxy@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionManagerProxy::getVersion", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionManagerProxy::getVersion(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.collection.CollectionManagerProxy.getVersion();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getProductId", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getProductId(" + "" + ")");
+            }
+        
+            // invoke native method
+            byte result;
+            try {
+                result = ref.getProductId();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::setProductId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte var1 = (byte) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::setProductId(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setProductId(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getProductVersion", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getProductVersion(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getProductVersion();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::setProductVersion", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::setProductVersion(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setProductVersion(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getLicense", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getLicense(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getLicense();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::setLicense", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::setLicense(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setLicense(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getMapkey", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getMapkey(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getMapkey();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::setMapkey", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::setMapkey(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapkey(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getUtdid", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getUtdid(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getUtdid();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::setUtdid", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::setUtdid(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setUtdid(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::isStopCollectionWhenScreenOff", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::isStopCollectionWhenScreenOff(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isStopCollectionWhenScreenOff();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::setStopCollectionWhenScreenOff", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::setStopCollectionWhenScreenOff(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setStopCollectionWhenScreenOff(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getFpsCollectorConfig", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getFpsCollectorConfig(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig result;
+            try {
+                result = ref.getFpsCollectorConfig();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getTrackCollectorConfig", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getTrackCollectorConfig(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig result;
+            try {
+                result = ref.getTrackCollectorConfig();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig::getUploadConfig", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig ref = (com.amap.location.collection.CollectionConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig@" + refId + "::getUploadConfig(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.collection.CollectionConfig.UploadConfig result;
+            try {
+                result = ref.getUploadConfig();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::isUploadWithLocatorEnabled", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::isUploadWithLocatorEnabled(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isUploadWithLocatorEnabled();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::setUploadWithLocatorEnabled", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::setUploadWithLocatorEnabled(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setUploadWithLocatorEnabled(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::isNonWifiUploadEnabled", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::isNonWifiUploadEnabled(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isNonWifiUploadEnabled();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::setNonWifiUploadEnabled", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::setNonWifiUploadEnabled(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setNonWifiUploadEnabled(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::getMaxWifiUploadSizePerDay", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::getMaxWifiUploadSizePerDay(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMaxWifiUploadSizePerDay();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::setMaxWifiUploadSizePerDay", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::setMaxWifiUploadSizePerDay(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMaxWifiUploadSizePerDay(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::getMaxMobileUploadSizePerDay", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::getMaxMobileUploadSizePerDay(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMaxMobileUploadSizePerDay();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::setMaxMobileUploadSizePerDay", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::setMaxMobileUploadSizePerDay(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMaxMobileUploadSizePerDay(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::getMaxUploadFailCount", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::getMaxUploadFailCount(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMaxUploadFailCount();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.UploadConfig::setMaxUploadFailCount", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.UploadConfig ref = (com.amap.location.collection.CollectionConfig.UploadConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.UploadConfig@" + refId + "::setMaxUploadFailCount(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMaxUploadFailCount(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::getLocScene", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.TrackCollectorConfig@" + refId + "::getLocScene(" + "" + ")");
+            }
+        
+            // invoke native method
+            byte result;
+            try {
+                result = ref.getLocScene();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::setLocScene", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.TrackCollectorConfig@" + refId + "::setLocScene(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setLocScene(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::isEnabled", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.TrackCollectorConfig@" + refId + "::isEnabled(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isEnabled();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::setEnabled", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.TrackCollectorConfig@" + refId + "::setEnabled(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setEnabled(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::isCollectSatellites", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.TrackCollectorConfig@" + refId + "::isCollectSatellites(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isCollectSatellites();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.TrackCollectorConfig::setCollectSatellites", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig ref = (com.amap.location.collection.CollectionConfig.TrackCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.TrackCollectorConfig@" + refId + "::setCollectSatellites(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCollectSatellites(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::isEnabled", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::isEnabled(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isEnabled();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::setEnabled", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::setEnabled(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setEnabled(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::isScanWifiAllowed", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::isScanWifiAllowed(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isScanWifiAllowed();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::setScanWifiAllowed", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::setScanWifiAllowed(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setScanWifiAllowed(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::isScanActiveAllowed", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::isScanActiveAllowed(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isScanActiveAllowed();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::setScanActiveAllowed", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::setScanActiveAllowed(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setScanActiveAllowed(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::isWifiFilterByUpdated", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::isWifiFilterByUpdated(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isWifiFilterByUpdated();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::setWifiFilterByUpdated", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::setWifiFilterByUpdated(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setWifiFilterByUpdated(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::getScanWifiInterval", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::getScanWifiInterval(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getScanWifiInterval();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.collection.CollectionConfig.FpsCollectorConfig::setScanWifiInterval", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig ref = (com.amap.location.collection.CollectionConfig.FpsCollectorConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.collection.CollectionConfig.FpsCollectorConfig@" + refId + "::setScanWifiInterval(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setScanWifiInterval(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.security.Core::cole", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte[] var0 = (byte[]) args.get("var0");
+            // jsonable arg
+            byte[] var1 = (byte[]) args.get("var1");
+            // jsonable arg
+            byte[] var2 = (byte[]) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::cole(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            byte[] result;
+            try {
+                result = com.amap.location.security.Core.cole(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::saos", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::saos(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.saos(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::rvd", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            float[] var0 = (float[]) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::rvd(" + var0 + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = com.amap.location.security.Core.rvd(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::mad", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            float[] var0 = (float[]) args.get("var0");
+            // jsonable arg
+            float[] var1 = (float[]) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::mad(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = com.amap.location.security.Core.mad(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::rts", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::rts(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.security.Core.rts();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.security.Core::avc", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+            // jsonable arg
+            byte[] var1 = (byte[]) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::avc(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            byte[] result;
+            try {
+                result = com.amap.location.security.Core.avc(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::ivs", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            long var0 = (long) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::ivs(" + var0 + ")");
+            }
+        
+            // invoke native method
+            long result;
+            try {
+                result = com.amap.location.security.Core.ivs(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::getNativeUriSegments", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::getNativeUriSegments(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.getNativeUriSegments(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::doEncrypt", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            byte[] var1 = (byte[]) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            int var3 = (int) args.get("var3");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::doEncrypt(" + var0 + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            byte[] result;
+            try {
+                result = com.amap.location.security.Core.doEncrypt(var0, var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::encMac", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::encMac(" + var0 + ")");
+            }
+        
+            // invoke native method
+            long result;
+            try {
+                result = com.amap.location.security.Core.encMac(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::getAuthServers", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::getAuthServers(" + "" + ")");
+            }
+        
+            // invoke native method
+            String[] result;
+            try {
+                result = com.amap.location.security.Core.getAuthServers();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(new ArrayList<String>(java.util.Arrays.asList(result)));
+        });
+        // method
+        put("com.amap.location.security.Core::getTag", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::getTag(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.getTag(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::encode", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::encode(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.encode(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::transfer", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            double var2 = (double) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::transfer(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.transfer(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::load", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            long var2 = (long) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::load(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.load(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::xxt", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte[] var0 = (byte[]) args.get("var0");
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::xxt(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            byte[] result;
+            try {
+                result = com.amap.location.security.Core.xxt(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::xxtAos", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::xxtAos(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.xxtAos(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::gwl", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+            // jsonable arg
+            String var3 = (String) args.get("var3");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::gwl(" + var0 + var1 + var2 + var3 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.gwl(var0, var1, var2, var3);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.security.Core::gcl", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var0 = (int) args.get("var0");
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            int var2 = (int) args.get("var2");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.security.Core::gcl(" + var0 + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.security.Core.gcl(var0, var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.BasicLocateManager::getInstance", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateManager::getInstance(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.BasicLocateManager result;
+            try {
+                result = com.amap.location.BasicLocateManager.getInstance();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.BasicLocateManager::init", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+            // ref arg
+            com.amap.location.BasicLocateConfig var2 = (com.amap.location.BasicLocateConfig) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateManager ref = (com.amap.location.BasicLocateManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateManager@" + refId + "::init(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.init(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateManager::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateManager ref = (com.amap.location.BasicLocateManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateManager@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.database.AbstractContentProvider::onCreate", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.database.AbstractContentProvider ref = (com.amap.location.common.database.AbstractContentProvider) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.database.AbstractContentProvider@" + refId + "::onCreate(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.onCreate();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::getProductId", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::getProductId(" + "" + ")");
+            }
+        
+            // invoke native method
+            byte result;
+            try {
+                result = com.amap.location.common.HeaderConfig.getProductId();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::setProductId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte var0 = (byte) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::setProductId(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.HeaderConfig.setProductId(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::getProductVerion", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::getProductVerion(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.HeaderConfig.getProductVerion();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::setProductVerion", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::setProductVerion(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.HeaderConfig.setProductVerion(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::getLicense", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::getLicense(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.HeaderConfig.getLicense();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::setLicense", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::setLicense(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.HeaderConfig.setLicense(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::getMapkey", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::getMapkey(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.HeaderConfig.getMapkey();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::setMapkey", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::setMapkey(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.HeaderConfig.setMapkey(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::getProcessName", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::getProcessName(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.HeaderConfig.getProcessName();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::setProcessName", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::setProcessName(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.HeaderConfig.setProcessName(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::getVersionName", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::getVersionName(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.HeaderConfig.getVersionName();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::setVersionName", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::setVersionName(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.HeaderConfig.setVersionName(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::getVersionCode", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::getVersionCode(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.HeaderConfig.getVersionCode();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.HeaderConfig::setVersionCode", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.HeaderConfig::setVersionCode(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.HeaderConfig.setVersionCode(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.util.FileUtil::isExternalStorageWritable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.util.FileUtil::isExternalStorageWritable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = com.amap.location.common.util.FileUtil.isExternalStorageWritable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.util.FileUtil::getAppSDCardFileDir", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.util.FileUtil::getAppSDCardFileDir(" + var0 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.util.FileUtil.getAppSDCardFileDir(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.util.FileUtil::getSystemAvailableSpace", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.util.FileUtil::getSystemAvailableSpace(" + var0 + ")");
+            }
+        
+            // invoke native method
+            long result;
+            try {
+                result = com.amap.location.common.util.FileUtil.getSystemAvailableSpace(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.util.FileUtil::getSdcardAvailableSpace", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.util.FileUtil::getSdcardAvailableSpace(" + var0 + ")");
+            }
+        
+            // invoke native method
+            long result;
+            try {
+                result = com.amap.location.common.util.FileUtil.getSdcardAvailableSpace(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.network.IHttpClient::post", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.common.network.HttpRequest var1 = (com.amap.location.common.network.HttpRequest) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.network.IHttpClient ref = (com.amap.location.common.network.IHttpClient) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.network.IHttpClient@" + refId + "::post(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.network.HttpResponse result;
+            try {
+                result = ref.post(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.CellStatus.HistoryCell::clone", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus.HistoryCell ref = (com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellStatus.HistoryCell@" + refId + "::clone(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.CellStatus.HistoryCell result;
+            try {
+                result = ref.clone();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.CellStatus::addHistoryCell", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var1RefIdList = (List<Integer>) args.get("var1");
+            List<com.amap.location.common.model.CellStatus.HistoryCell> var1 = new ArrayList<>();
+            for (int refId : var1RefIdList) {
+                var1.add((com.amap.location.common.model.CellStatus.HistoryCell) getHEAP().get(refId));
+            }
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellStatus@" + refId + "::addHistoryCell(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.addHistoryCell(new ArrayList(var1));
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.CellStatus::getHistoryCells", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellStatus@" + refId + "::getHistoryCells(" + "" + ")");
+            }
+        
+            // invoke native method
+            List<com.amap.location.common.model.CellStatus.HistoryCell> result;
+            try {
+                result = ref.getHistoryCells();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                List<Integer> resultRefIdList = new ArrayList<>();
+                for (com.amap.location.common.model.CellStatus.HistoryCell item : result) {
+                    getHEAP().put(item.hashCode(), item);
+                    resultRefIdList.add(item.hashCode());
+                }
+                methodResult.success(resultRefIdList);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.CellStatus::clone", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellStatus@" + refId + "::clone(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.CellStatus result;
+            try {
+                result = ref.clone();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.CellStatus::toStringSimple", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellStatus ref = (com.amap.location.common.model.CellStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellStatus@" + refId + "::toStringSimple(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.toStringSimple();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::toBuiltInLocation", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::toBuiltInLocation(" + "" + ")");
+            }
+        
+            // invoke native method
+            android.location.Location result;
+            try {
+                result = ref.toBuiltInLocation();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setBuiltInLocationAdjust", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.location.Location var1 = (android.location.Location) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setBuiltInLocationAdjust(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setBuiltInLocationAdjust(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getProvider", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getProvider(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getProvider();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setProvider", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setProvider(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setProvider(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getLon", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getLon(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getLon();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setLon", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var1 = (double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setLon(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setLon(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getLat", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getLat(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getLat();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setLat", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var1 = (double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setLat(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setLat(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getAltitude", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getAltitude(" + "" + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.getAltitude();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setAltitude", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double var1 = (double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setAltitude(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAltitude(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getOptimizedAccuracy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getOptimizedAccuracy(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getOptimizedAccuracy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setOptimizedAccuracy", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setOptimizedAccuracy(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setOptimizedAccuracy(new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getAccuracy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getAccuracy(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getAccuracy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setAccuracy", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setAccuracy(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAccuracy(new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getSpeed", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getSpeed(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getSpeed();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setSpeed", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setSpeed(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setSpeed(new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getBearing", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getBearing(" + "" + ")");
+            }
+        
+            // invoke native method
+            float result;
+            try {
+                result = ref.getBearing();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setBearing", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            Double var1 = (Double) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setBearing(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setBearing(new Double(var1).floatValue());
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getTime", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getTime(" + "" + ")");
+            }
+        
+            // invoke native method
+            long result;
+            try {
+                result = ref.getTime();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setTime", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            long var1 = (long) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setTime(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setTime(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getType", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getType(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getType();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setType", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setType(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setType(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getScenarioConfidence", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getScenarioConfidence(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getScenarioConfidence();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setScenarioConfidence", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setScenarioConfidence(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setScenarioConfidence(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getSubType", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getSubType(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getSubType();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setSubType", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setSubType(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setSubType(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getIsLast", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getIsLast(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.getIsLast();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setIsLast", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setIsLast(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setIsLast(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getRetype", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getRetype(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getRetype();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setRetype", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setRetype(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setRetype(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getRdesc", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getRdesc(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getRdesc();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setRdesc", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setRdesc(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setRdesc(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getCitycode", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getCitycode(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getCitycode();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setCitycode", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setCitycode(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCitycode(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getDesc", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getDesc(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getDesc();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setDesc", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setDesc(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setDesc(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getAdcode", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getAdcode(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getAdcode();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setAdcode", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setAdcode(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAdcode(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getCountry", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getCountry(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getCountry();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setCountry", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setCountry(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCountry(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getProvince", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getProvince(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getProvince();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setProvince", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setProvince(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setProvince(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getCity", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getCity(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getCity();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setCity", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setCity(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCity(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getDistrict", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getDistrict(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getDistrict();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setDistrict", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setDistrict(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setDistrict(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getRoad", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getRoad(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getRoad();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setRoad", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setRoad(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setRoad(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getStreet", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getStreet(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getStreet();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setStreet", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setStreet(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setStreet(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getNumber", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getNumber(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getNumber();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setNumber", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setNumber(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setNumber(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getAoiname", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getAoiname(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getAoiname();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setAoiname", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setAoiname(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAoiname(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getPoiname", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getPoiname(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getPoiname();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setPoiname", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setPoiname(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setPoiname(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getCens", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getCens(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getCens();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setCens", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setCens(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCens(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getPoiid", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getPoiid(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getPoiid();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setPoiid", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setPoiid(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setPoiid(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getFloor", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getFloor(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getFloor();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setFloor", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setFloor(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setFloor(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getCoord", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getCoord(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getCoord();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setCoord", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setCoord(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCoord(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getMcell", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getMcell(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getMcell();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getMcellLoc", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getMcellLoc(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.AmapLoc result;
+            try {
+                result = ref.getMcellLoc();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setMcell", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setMcell(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMcell(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setIsError", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setIsError(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setIsError(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getIsError", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getIsError(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.getIsError();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::hasAltitude", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::hasAltitude(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.hasAltitude();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::hasAccuracy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::hasAccuracy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.hasAccuracy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::hasBearing", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::hasBearing(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.hasBearing();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::hasSpeed", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::hasSpeed(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.hasSpeed();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getServerFilterContext", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::getServerFilterContext(" + "" + ")");
+            }
+        
+            // invoke native method
+            byte[] result;
+            try {
+                result = ref.getServerFilterContext();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setServerFilterContext", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setServerFilterContext(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setServerFilterContext(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::resetServerFilterContext", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::resetServerFilterContext(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.resetServerFilterContext();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::setServerError", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::setServerError(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setServerError(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::isServerParseRequestError", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::isServerParseRequestError(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isServerParseRequestError();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::isLocationCorrect", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::isLocationCorrect(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isLocationCorrect();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::toStr", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::toStr(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.toStr();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::toJSONStr", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.AmapLoc ref = (com.amap.location.common.model.AmapLoc) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc@" + refId + "::toJSONStr(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.toJSONStr(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.AmapLoc::getLocType", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.common.model.AmapLoc var0 = (com.amap.location.common.model.AmapLoc) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.AmapLoc::getLocType(" + var0 + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = com.amap.location.common.model.AmapLoc.getLocType(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.CellState::getKey", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellState@" + refId + "::getKey(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getKey();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.CellState::getKeyWithOutInterface", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellState@" + refId + "::getKeyWithOutInterface(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getKeyWithOutInterface();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.CellState::isValid", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellState@" + refId + "::isValid(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isValid();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.CellState::clone", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.CellState ref = (com.amap.location.common.model.CellState) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.CellState@" + refId + "::clone(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.CellState result;
+            try {
+                result = ref.clone();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.WiFi::getKey", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WiFi@" + refId + "::getKey(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getKey();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.WiFi::clone", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WiFi ref = (com.amap.location.common.model.WiFi) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WiFi@" + refId + "::clone(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.WiFi result;
+            try {
+                result = ref.clone();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.HisLocation::distanceTo", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.common.model.HisLocation var1 = (com.amap.location.common.model.HisLocation) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.HisLocation ref = (com.amap.location.common.model.HisLocation) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.HisLocation@" + refId + "::distanceTo(" + var1 + ")");
+            }
+        
+            // invoke native method
+            double result;
+            try {
+                result = ref.distanceTo(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.HisLocation::makeLocationByGpsLocation", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.location.Location var0 = (android.location.Location) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.HisLocation::makeLocationByGpsLocation(" + var0 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.HisLocation result;
+            try {
+                result = com.amap.location.common.model.HisLocation.makeLocationByGpsLocation(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.HisLocation::makeLocationByNetworkLocation", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.common.model.AmapLoc var0 = (com.amap.location.common.model.AmapLoc) getHEAP().get((int) args.get("var0"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.HisLocation::makeLocationByNetworkLocation(" + var0 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.HisLocation result;
+            try {
+                result = com.amap.location.common.model.HisLocation.makeLocationByNetworkLocation(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.HisLocation::makeLocationByText", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.HisLocation::makeLocationByText(" + var0 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.HisLocation result;
+            try {
+                result = com.amap.location.common.model.HisLocation.makeLocationByText(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.WifiStatus::getWiFi", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WifiStatus@" + refId + "::getWiFi(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.WiFi result;
+            try {
+                result = ref.getWiFi(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.WifiStatus::numWiFis", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WifiStatus@" + refId + "::numWiFis(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.numWiFis();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.WifiStatus::setWifiList", (args, methodResult) -> {
+            // args
+            // list arg
+            List<Integer> var1RefIdList = (List<Integer>) args.get("var1");
+            List<com.amap.location.common.model.WiFi> var1 = new ArrayList<>();
+            for (int refId : var1RefIdList) {
+                var1.add((com.amap.location.common.model.WiFi) getHEAP().get(refId));
+            }
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WifiStatus@" + refId + "::setWifiList(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setWifiList(new ArrayList(var1));
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.model.WifiStatus::getWifiList", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WifiStatus@" + refId + "::getWifiList(" + "" + ")");
+            }
+        
+            // invoke native method
+            List<com.amap.location.common.model.WiFi> result;
+            try {
+                result = ref.getWifiList();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                List<Integer> resultRefIdList = new ArrayList<>();
+                for (com.amap.location.common.model.WiFi item : result) {
+                    getHEAP().put(item.hashCode(), item);
+                    resultRefIdList.add(item.hashCode());
+                }
+                methodResult.success(resultRefIdList);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.WifiStatus::clone", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WifiStatus@" + refId + "::clone(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.WifiStatus result;
+            try {
+                result = ref.clone();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.WifiStatus::toStringSimple", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.WifiStatus ref = (com.amap.location.common.model.WifiStatus) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.WifiStatus@" + refId + "::toStringSimple(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.toStringSimple();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.model.FPS::clone", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.FPS@" + refId + "::clone(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.FPS result;
+            try {
+                result = ref.clone();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.model.FPS::toStringSimple", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.model.FPS ref = (com.amap.location.common.model.FPS) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.model.FPS@" + refId + "::toStringSimple(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.toStringSimple();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::init", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var0 = (android.content.Context) getHEAP().get((int) args.get("var0"));
+            // ref arg
+            com.amap.location.common.log.LogConfig var1 = (com.amap.location.common.log.LogConfig) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::init(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.log.ALLog.init(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::setGlobalFileLogEnable", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var0 = (boolean) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::setGlobalFileLogEnable(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.log.ALLog.setGlobalFileLogEnable(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::setGlobalLogcatEnable", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var0 = (boolean) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::setGlobalLogcatEnable(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.log.ALLog.setGlobalLogcatEnable(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::setGlobalServerLogEnable", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var0 = (boolean) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::setGlobalServerLogEnable(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.log.ALLog.setGlobalServerLogEnable(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::setTraceWriteToFile", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var0 = (boolean) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::setTraceWriteToFile(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.log.ALLog.setTraceWriteToFile(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::setTraceUpToServer", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var0 = (boolean) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::setTraceUpToServer(" + var0 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.log.ALLog.setTraceUpToServer(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::trace", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::trace(" + var0 + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                com.amap.location.common.log.ALLog.trace(var0, var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::logEncode", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var0 = (String) args.get("var0");
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::logEncode(" + var0 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.log.ALLog.logEncode(var0);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::isTraceUseful", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::isTraceUseful(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = com.amap.location.common.log.ALLog.isTraceUseful();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::isGlobalLogcatEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::isGlobalLogcatEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = com.amap.location.common.log.ALLog.isGlobalLogcatEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::isGlobalFileLogEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::isGlobalFileLogEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = com.amap.location.common.log.ALLog.isGlobalFileLogEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::isGlobalServerLogEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::isGlobalServerLogEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = com.amap.location.common.log.ALLog.isGlobalServerLogEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::getLogFileDir", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::getLogFileDir(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = com.amap.location.common.log.ALLog.getLogFileDir();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.ALLog::getProduct", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.ALLog::getProduct(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Product result;
+            try {
+                result = com.amap.location.common.log.ALLog.getProduct();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::isLogcatEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::isLogcatEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isLogcatEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::isFileLogEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::isFileLogEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isFileLogEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::isServerLogEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::isServerLogEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isServerLogEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::isTraceUpToServer", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::isTraceUpToServer(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isTraceUpToServer();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::isTraceWriteToFile", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::isTraceWriteToFile(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isTraceWriteToFile();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::getLogFileMaxCount", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::getLogFileMaxCount(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getLogFileMaxCount();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::getLogMemoryBufferSize", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::getLogMemoryBufferSize(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getLogMemoryBufferSize();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::getSignalLogFileLimit", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::getSignalLogFileLimit(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getSignalLogFileLimit();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::getLogFileDir", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::getLogFileDir(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getLogFileDir();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig::getProduct", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig ref = (com.amap.location.common.log.LogConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig@" + refId + "::getProduct(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Product result;
+            try {
+                result = ref.getProduct();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setLogcatEnable", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setLogcatEnable(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setLogcatEnable(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setFileLogEnable", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setFileLogEnable(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setFileLogEnable(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setServerLogEnable", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setServerLogEnable(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setServerLogEnable(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setTraceWriteToFile", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setTraceWriteToFile(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setTraceWriteToFile(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setTraceUpToServer", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setTraceUpToServer(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setTraceUpToServer(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setLogMemoryBufferSize", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setLogMemoryBufferSize(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setLogMemoryBufferSize(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setSignalLogFileLimit", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setSignalLogFileLimit(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setSignalLogFileLimit(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::setLogFileMaxCount", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::setLogFileMaxCount(" + var1 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig.Builder result;
+            try {
+                result = ref.setLogFileMaxCount(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.common.log.LogConfig.Builder::build", (args, methodResult) -> {
+            // args
+            // enum arg
+            com.amap.location.common.log.LogConfig.Product var1 = com.amap.location.common.log.LogConfig.Product.values()[(int) args.get("var1")];
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.common.log.LogConfig.Builder ref = (com.amap.location.common.log.LogConfig.Builder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.common.log.LogConfig.Builder@" + refId + "::build(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.log.LogConfig result;
+            try {
+                result = ref.build(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::getProductId", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::getProductId(" + "" + ")");
+            }
+        
+            // invoke native method
+            byte result;
+            try {
+                result = ref.getProductId();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::setProductId", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte var1 = (byte) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::setProductId(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setProductId(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::getProductVersion", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::getProductVersion(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getProductVersion();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::setProductVersion", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::setProductVersion(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setProductVersion(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::getMapkey", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::getMapkey(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getMapkey();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::setMapkey", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::setMapkey(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setMapkey(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::getLicense", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::getLicense(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getLicense();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::setLicense", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::setLicense(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setLicense(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::getAdiu", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::getAdiu(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getAdiu();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::setAdiu", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::setAdiu(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setAdiu(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::getUtdid", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::getUtdid(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getUtdid();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::setUtdid", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::setUtdid(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setUtdid(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::setHttpClient", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::setHttpClient(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setHttpClient(new com.amap.location.common.network.IHttpClient() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.location.BasicLocateConfig::setHttpClient::Callback");
+        
+                // call dart method
+                @Override
+                public com.amap.location.common.network.HttpResponse post(com.amap.location.common.network.HttpRequest var1) {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: post(" + var1 + ")");
+                    }
+        
+                    // convert to jsonable data
+                    // ref arg
+                    int argvar1 = var1.hashCode();
+                    getHEAP().put(argvar1, var1);
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.common.network.IHttpClient::post",
+                            new HashMap<String, Object>() {{
+                                put("var1", argvar1);
+                            }}
+                    );
+        
+                    // method result
+                    return null;
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.BasicLocateConfig::enableGetPrivateID", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.BasicLocateConfig ref = (com.amap.location.BasicLocateConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.BasicLocateConfig@" + refId + "::enableGetPrivateID(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.enableGetPrivateID(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::isEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::isEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getConfigTime", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getConfigTime(" + "" + ")");
+            }
+        
+            // invoke native method
+            long result;
+            try {
+                result = ref.getConfigTime();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::clearAll", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::clearAll(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.clearAll();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getTrainingThreshold", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getTrainingThreshold(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getTrainingThreshold();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getMinWifiNum", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getMinWifiNum(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMinWifiNum();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getContentProviderList", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getContentProviderList(" + "" + ")");
+            }
+        
+            // invoke native method
+            String[] result;
+            try {
+                result = ref.getContentProviderList();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(new ArrayList<String>(java.util.Arrays.asList(result)));
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getMaxRequestTimes", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getMaxRequestTimes(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMaxRequestTimes();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getMaxNonWifiRequestTimes", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getMaxNonWifiRequestTimes(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMaxNonWifiRequestTimes();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getMaxNumPerRequest", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getMaxNumPerRequest(" + "" + ")");
+            }
+        
+            // invoke native method
+            int result;
+            try {
+                result = ref.getMaxNumPerRequest();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.IOfflineCloudConfig::getNeedFirstDownload", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.IOfflineCloudConfig ref = (com.amap.location.offline.IOfflineCloudConfig) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.IOfflineCloudConfig@" + refId + "::getNeedFirstDownload(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.getNeedFirstDownload();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::getInstance", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+        
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager::getInstance(" + "" + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.offline.OfflineManager result;
+            try {
+                result = com.amap.location.offline.OfflineManager.getInstance();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::init", (args, methodResult) -> {
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+            // ref arg
+            com.amap.location.offline.OfflineConfig var2 = (com.amap.location.offline.OfflineConfig) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineManager ref = (com.amap.location.offline.OfflineManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager@" + refId + "::init(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.init(var1, var2, new com.amap.location.offline.IOfflineCloudConfig() {
+                // method channel
+                MethodChannel callbackChannel = new MethodChannel(registrar.messenger(), "com.amap.location.offline.OfflineManager::init::Callback");
+        
+                // call dart method
+                @Override
+                public boolean isEnable() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: isEnable(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::isEnable",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return true;
+                }
+        
+                @Override
+                public long getConfigTime() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getConfigTime(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getConfigTime",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0L;
+                }
+        
+                @Override
+                public boolean clearAll() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: clearAll(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::clearAll",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return true;
+                }
+        
+                @Override
+                public int getTrainingThreshold() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getTrainingThreshold(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getTrainingThreshold",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0;
+                }
+        
+                @Override
+                public int getMinWifiNum() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getMinWifiNum(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getMinWifiNum",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0;
+                }
+        
+                @Override
+                public String[] getContentProviderList() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getContentProviderList(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getContentProviderList",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return null;
+                }
+        
+                @Override
+                public int getMaxRequestTimes() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getMaxRequestTimes(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getMaxRequestTimes",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0;
+                }
+        
+                @Override
+                public int getMaxNonWifiRequestTimes() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getMaxNonWifiRequestTimes(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getMaxNonWifiRequestTimes",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0;
+                }
+        
+                @Override
+                public int getMaxNumPerRequest() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getMaxNumPerRequest(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getMaxNumPerRequest",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return 0;
+                }
+        
+                @Override
+                public boolean getNeedFirstDownload() {
+                    // print log
+                    if (getEnableLog()) {
+                        Log.d("java-callback", "fluttify-java-callback: getNeedFirstDownload(" + "" + ")");
+                    }
+        
+                    // convert to jsonable data
+        
+        
+                    // call dart method
+                    callbackChannel.invokeMethod(
+                            "Callback::com.amap.location.offline.IOfflineCloudConfig::getNeedFirstDownload",
+                            new HashMap<String, Object>() {{
+                
+                            }}
+                    );
+        
+                    // method result
+                    return true;
+                }
+        
+            });
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineManager ref = (com.amap.location.offline.OfflineManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::updateConfig", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.offline.OfflineConfig var1 = (com.amap.location.offline.OfflineConfig) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineManager ref = (com.amap.location.offline.OfflineManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager@" + refId + "::updateConfig(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.updateConfig(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::isEnable", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineManager ref = (com.amap.location.offline.OfflineManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager@" + refId + "::isEnable(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.isEnable();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::getLocation", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.common.model.FPS var1 = (com.amap.location.common.model.FPS) getHEAP().get((int) args.get("var1"));
+            // jsonable arg
+            boolean var2 = (boolean) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineManager ref = (com.amap.location.offline.OfflineManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager@" + refId + "::getLocation(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            com.amap.location.common.model.AmapLoc result;
+            try {
+                result = ref.getLocation(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            if (result != null) {
+                int returnRefId = result.hashCode();
+                getHEAP().put(returnRefId, result);
+        
+                methodResult.success(returnRefId);
+            } else {
+                methodResult.success(null);
+            }
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::trainingFps", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.common.model.FPS var1 = (com.amap.location.common.model.FPS) getHEAP().get((int) args.get("var1"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineManager ref = (com.amap.location.offline.OfflineManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager@" + refId + "::trainingFps(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.trainingFps(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.offline.OfflineManager::correctLocation", (args, methodResult) -> {
+            // args
+            // ref arg
+            com.amap.location.common.model.FPS var1 = (com.amap.location.common.model.FPS) getHEAP().get((int) args.get("var1"));
+            // ref arg
+            com.amap.location.common.model.AmapLoc var2 = (com.amap.location.common.model.AmapLoc) getHEAP().get((int) args.get("var2"));
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineManager ref = (com.amap.location.offline.OfflineManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineManager@" + refId + "::correctLocation(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.correctLocation(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.offline.OfflineConfig.ILocateLogRecorder::onLocateSuccess", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            byte[] var1 = (byte[]) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig.ILocateLogRecorder ref = (com.amap.location.offline.OfflineConfig.ILocateLogRecorder) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineConfig.ILocateLogRecorder@" + refId + "::onLocateSuccess(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.onLocateSuccess(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.location.offline.OfflineConfig.ICoordinateConverter::wgsToGcj", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            double[] var1 = (double[]) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineConfig.ICoordinateConverter ref = (com.amap.location.offline.OfflineConfig.ICoordinateConverter) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineConfig.ICoordinateConverter@" + refId + "::wgsToGcj(" + var1 + ")");
+            }
+        
+            // invoke native method
+            double[] result;
+            try {
+                result = ref.wgsToGcj(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.location.offline.OfflineProvider::onCreate", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.location.offline.OfflineProvider ref = (com.amap.location.offline.OfflineProvider) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.location.offline.OfflineProvider@" + refId + "::onCreate(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.onCreate();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::init", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::init(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.init(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::setCloudConfigVersion", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::setCloudConfigVersion(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.setCloudConfigVersion(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::loadLocalSo", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::loadLocalSo(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.loadLocalSo();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::loadSo", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::loadSo(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.loadSo(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::getCollectVersion", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::getCollectVersion(" + "" + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getCollectVersion();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::startCollect", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::startCollect(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.startCollect();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::destroyCollect", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::destroyCollect(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.destroyCollect();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::destroyOfflineLoc", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::destroyOfflineLoc(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.destroyOfflineLoc();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.amap.opensdk.co.CoManager::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.amap.opensdk.co.CoManager ref = (com.amap.opensdk.co.CoManager) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.amap.opensdk.co.CoManager@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.amap.api.location.LocationManagerBase::setLocationOption", (args, methodResult) -> {
@@ -7593,6 +17247,25 @@ public class AmapLocationFluttifyPlugin implements MethodChannel.MethodCallHandl
             methodResult.success("success");
         });
         // factory
+        put("ObjectFactory::createcom_autonavi_httpdns_HttpDnsManager__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_autonavi_httpdns_HttpDnsManager__android_content_Context");
+        
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+        
+            // create target object
+            com.autonavi.httpdns.HttpDnsManager obj = new com.autonavi.httpdns.HttpDnsManager(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
         put("ObjectFactory::createcom_autonavi_aps_amapapi_model_AMapLocationServer__String", (args, methodResult) -> {
             Log.d("ObjectFactory", "创建对象: com_autonavi_aps_amapapi_model_AMapLocationServer__String");
         
@@ -7602,6 +17275,637 @@ public class AmapLocationFluttifyPlugin implements MethodChannel.MethodCallHandl
         
             // create target object
             com.autonavi.aps.amapapi.model.AMapLocationServer obj = new com.autonavi.aps.amapapi.model.AMapLocationServer(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_collection_CollectionManagerProxy__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_collection_CollectionManagerProxy__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.collection.CollectionManagerProxy obj = new com.amap.location.collection.CollectionManagerProxy();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_collection_CollectionConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_collection_CollectionConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.collection.CollectionConfig obj = new com.amap.location.collection.CollectionConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_collection_CollectionConfig_UploadConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_collection_CollectionConfig_UploadConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.collection.CollectionConfig.UploadConfig obj = new com.amap.location.collection.CollectionConfig.UploadConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_collection_CollectionConfig_TrackCollectorConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_collection_CollectionConfig_TrackCollectorConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.collection.CollectionConfig.TrackCollectorConfig obj = new com.amap.location.collection.CollectionConfig.TrackCollectorConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_collection_CollectionConfig_FpsCollectorConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_collection_CollectionConfig_FpsCollectorConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.collection.CollectionConfig.FpsCollectorConfig obj = new com.amap.location.collection.CollectionConfig.FpsCollectorConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_security_Core__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_security_Core__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.security.Core obj = new com.amap.location.security.Core();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_HeaderConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_HeaderConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.HeaderConfig obj = new com.amap.location.common.HeaderConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_util_FileUtil__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_util_FileUtil__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.util.FileUtil obj = new com.amap.location.common.util.FileUtil();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_network_HttpRequest__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_network_HttpRequest__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.network.HttpRequest obj = new com.amap.location.common.network.HttpRequest();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_network_HttpResponse__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_network_HttpResponse__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.network.HttpResponse obj = new com.amap.location.common.network.HttpResponse();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_Adjacent_Borders__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_Adjacent_Borders__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.Adjacent.Borders obj = new com.amap.location.common.model.Adjacent.Borders();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_CellStatus_HistoryCell__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_CellStatus_HistoryCell__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.CellStatus.HistoryCell obj = new com.amap.location.common.model.CellStatus.HistoryCell();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_CellStatus_HistoryCell__com_amap_location_common_model_CellState", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_CellStatus_HistoryCell__com_amap_location_common_model_CellState");
+        
+            // args
+            // ref arg
+            com.amap.location.common.model.CellState var1 = (com.amap.location.common.model.CellState) getHEAP().get((int) args.get("var1"));
+        
+            // create target object
+            com.amap.location.common.model.CellStatus.HistoryCell obj = new com.amap.location.common.model.CellStatus.HistoryCell(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_CellStatus__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_CellStatus__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.CellStatus obj = new com.amap.location.common.model.CellStatus();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_Adjacent__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_Adjacent__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.Adjacent obj = new com.amap.location.common.model.Adjacent();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_CellState__int__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_CellState__int__boolean");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            boolean var2 = (boolean) args.get("var2");
+        
+            // create target object
+            com.amap.location.common.model.CellState obj = new com.amap.location.common.model.CellState(var1, var2);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_CellState__int__boolean__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_CellState__int__boolean__boolean");
+        
+            // args
+            // jsonable arg
+            int var1 = (int) args.get("var1");
+            // jsonable arg
+            boolean var2 = (boolean) args.get("var2");
+            // jsonable arg
+            boolean var3 = (boolean) args.get("var3");
+        
+            // create target object
+            com.amap.location.common.model.CellState obj = new com.amap.location.common.model.CellState(var1, var2, var3);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_WiFi__long__String__int__int__long", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_WiFi__long__String__int__int__long");
+        
+            // args
+            // jsonable arg
+            long var1 = (long) args.get("var1");
+            // jsonable arg
+            String var3 = (String) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+            // jsonable arg
+            int var5 = (int) args.get("var5");
+            // jsonable arg
+            long var6 = (long) args.get("var6");
+        
+            // create target object
+            com.amap.location.common.model.WiFi obj = new com.amap.location.common.model.WiFi(var1, var3, var4, var5, var6);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_WiFi__long__String__int__int__long__boolean", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_WiFi__long__String__int__int__long__boolean");
+        
+            // args
+            // jsonable arg
+            long var1 = (long) args.get("var1");
+            // jsonable arg
+            String var3 = (String) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+            // jsonable arg
+            int var5 = (int) args.get("var5");
+            // jsonable arg
+            long var6 = (long) args.get("var6");
+            // jsonable arg
+            boolean var8 = (boolean) args.get("var8");
+        
+            // create target object
+            com.amap.location.common.model.WiFi obj = new com.amap.location.common.model.WiFi(var1, var3, var4, var5, var6, var8);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_WiFi__long__String__int__int__long__long__boolean__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_WiFi__long__String__int__int__long__long__boolean__int");
+        
+            // args
+            // jsonable arg
+            long var1 = (long) args.get("var1");
+            // jsonable arg
+            String var3 = (String) args.get("var3");
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+            // jsonable arg
+            int var5 = (int) args.get("var5");
+            // jsonable arg
+            long var6 = (long) args.get("var6");
+            // jsonable arg
+            long var8 = (long) args.get("var8");
+            // jsonable arg
+            boolean var10 = (boolean) args.get("var10");
+            // jsonable arg
+            int var11 = (int) args.get("var11");
+        
+            // create target object
+            com.amap.location.common.model.WiFi obj = new com.amap.location.common.model.WiFi(var1, var3, var4, var5, var6, var8, var10, var11);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_HisLocation__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_HisLocation__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.HisLocation obj = new com.amap.location.common.model.HisLocation();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_WifiStatus__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_WifiStatus__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.WifiStatus obj = new com.amap.location.common.model.WifiStatus();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_WifiStatus__long", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_WifiStatus__long");
+        
+            // args
+            // jsonable arg
+            long var1 = (long) args.get("var1");
+        
+            // create target object
+            com.amap.location.common.model.WifiStatus obj = new com.amap.location.common.model.WifiStatus(var1);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_WifiStatus__long__com_amap_location_common_model_WiFi__int", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_WifiStatus__long__com_amap_location_common_model_WiFi__int");
+        
+            // args
+            // jsonable arg
+            long var1 = (long) args.get("var1");
+            // list arg
+            List<Integer> var3RefIdList = (List<Integer>) args.get("var3");
+            List<com.amap.location.common.model.WiFi> var3 = new ArrayList<>();
+            for (int refId : var3RefIdList) {
+                var3.add((com.amap.location.common.model.WiFi) getHEAP().get(refId));
+            }
+            // jsonable arg
+            int var4 = (int) args.get("var4");
+        
+            // create target object
+            com.amap.location.common.model.WifiStatus obj = new com.amap.location.common.model.WifiStatus(var1, new ArrayList(var3), var4);
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_Adjacent_Neighbors__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_Adjacent_Neighbors__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.Adjacent.Neighbors obj = new com.amap.location.common.model.Adjacent.Neighbors();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_model_FPS__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_model_FPS__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.model.FPS obj = new com.amap.location.common.model.FPS();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_common_log_LogConfig_Builder__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_common_log_LogConfig_Builder__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.common.log.LogConfig.Builder obj = new com.amap.location.common.log.LogConfig.Builder();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_BasicLocateConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_BasicLocateConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.BasicLocateConfig obj = new com.amap.location.BasicLocateConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_offline_OfflineConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_offline_OfflineConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.offline.OfflineConfig obj = new com.amap.location.offline.OfflineConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_offline_OfflineProvider__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_offline_OfflineProvider__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.offline.OfflineProvider obj = new com.amap.location.offline.OfflineProvider();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_location_offline_upload_UploadConfig__", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_location_offline_upload_UploadConfig__");
+        
+            // args
+        
+        
+            // create target object
+            com.amap.location.offline.upload.UploadConfig obj = new com.amap.location.offline.upload.UploadConfig();
+            getHEAP().put(obj.hashCode(), obj);
+        
+            // print current HEAP
+            if (getEnableLog()) {
+                Log.d("ObjectFactory", "HEAP: " + getHEAP());
+            }
+        
+            methodResult.success(obj.hashCode());
+        });
+        // factory
+        put("ObjectFactory::createcom_amap_opensdk_co_CoManager__android_content_Context", (args, methodResult) -> {
+            Log.d("ObjectFactory", "创建对象: com_amap_opensdk_co_CoManager__android_content_Context");
+        
+            // args
+            // ref arg
+            android.content.Context var1 = (android.content.Context) getHEAP().get((int) args.get("var1"));
+        
+            // create target object
+            com.amap.opensdk.co.CoManager obj = new com.amap.opensdk.co.CoManager(var1);
             getHEAP().put(obj.hashCode(), obj);
         
             // print current HEAP

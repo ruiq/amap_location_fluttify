@@ -15,8 +15,183 @@ Future<bool> isKindOfcom_loc_(Ref ref) async {
   return result;
 }
 
+Future<bool> isKindOfcom_autonavi_httpdns_HttpDnsManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_httpdns_HttpDnsManager', {'refId': ref.refId});
+  return result;
+}
+
 Future<bool> isKindOfcom_autonavi_aps_amapapi_model_AMapLocationServer(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_autonavi_aps_amapapi_model_AMapLocationServer', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_collection_CollectionManagerProxy(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_collection_CollectionManagerProxy', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_collection_CollectionConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_collection_CollectionConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_collection_CollectionConfig_UploadConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_collection_CollectionConfig_UploadConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_collection_CollectionConfig_TrackCollectorConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_collection_CollectionConfig_TrackCollectorConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_collection_CollectionConfig_FpsCollectorConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_collection_CollectionConfig_FpsCollectorConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_uptunnel_core_db_DBProvider(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_uptunnel_core_db_DBProvider', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_security_Core(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_security_Core', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_BasicLocateManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_BasicLocateManager', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_database_AbstractContentProvider(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_database_AbstractContentProvider', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_HeaderConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_HeaderConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_util_FileUtil(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_util_FileUtil', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_network_HttpRequest(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_network_HttpRequest', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_network_HttpResponse(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_network_HttpResponse', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_Adjacent_Borders(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_Adjacent_Borders', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_CellStatus_HistoryCell(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_CellStatus_HistoryCell', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_CellStatus(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_CellStatus', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_AmapLoc(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_AmapLoc', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_Adjacent(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_Adjacent', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_CellState(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_CellState', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_WiFi(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_WiFi', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_HisLocation(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_HisLocation', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_WifiStatus(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_WifiStatus', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_Adjacent_Neighbors(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_Adjacent_Neighbors', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_model_FPS(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_model_FPS', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_log_ALLog(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_log_ALLog', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_log_LogConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_log_LogConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_common_log_LogConfig_Builder(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_common_log_LogConfig_Builder', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_BasicLocateConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_BasicLocateConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_offline_OfflineManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_offline_OfflineManager', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_offline_OfflineConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_offline_OfflineConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_offline_OfflineProvider(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_offline_OfflineProvider', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_location_offline_upload_UploadConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_location_offline_upload_UploadConfig', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_opensdk_co_CoManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_opensdk_co_CoManager', {'refId': ref.refId});
+  return result;
+}
+
+Future<bool> isKindOfcom_amap_openapi_Runnable(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::isKindOfcom_amap_openapi_Runnable', {'refId': ref.refId});
   return result;
 }
 
@@ -86,9 +261,184 @@ Future<com_loc_> ascom_loc_(Ref ref) async {
   return com_loc_()..refId = result;
 }
 
+Future<com_autonavi_httpdns_HttpDnsManager> ascom_autonavi_httpdns_HttpDnsManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_autonavi_httpdns_HttpDnsManager', {'refId': ref.refId});
+  return com_autonavi_httpdns_HttpDnsManager()..refId = result;
+}
+
 Future<com_autonavi_aps_amapapi_model_AMapLocationServer> ascom_autonavi_aps_amapapi_model_AMapLocationServer(Ref ref) async {
   final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_autonavi_aps_amapapi_model_AMapLocationServer', {'refId': ref.refId});
   return com_autonavi_aps_amapapi_model_AMapLocationServer()..refId = result;
+}
+
+Future<com_amap_location_collection_CollectionManagerProxy> ascom_amap_location_collection_CollectionManagerProxy(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_collection_CollectionManagerProxy', {'refId': ref.refId});
+  return com_amap_location_collection_CollectionManagerProxy()..refId = result;
+}
+
+Future<com_amap_location_collection_CollectionConfig> ascom_amap_location_collection_CollectionConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_collection_CollectionConfig', {'refId': ref.refId});
+  return com_amap_location_collection_CollectionConfig()..refId = result;
+}
+
+Future<com_amap_location_collection_CollectionConfig_UploadConfig> ascom_amap_location_collection_CollectionConfig_UploadConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_collection_CollectionConfig_UploadConfig', {'refId': ref.refId});
+  return com_amap_location_collection_CollectionConfig_UploadConfig()..refId = result;
+}
+
+Future<com_amap_location_collection_CollectionConfig_TrackCollectorConfig> ascom_amap_location_collection_CollectionConfig_TrackCollectorConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_collection_CollectionConfig_TrackCollectorConfig', {'refId': ref.refId});
+  return com_amap_location_collection_CollectionConfig_TrackCollectorConfig()..refId = result;
+}
+
+Future<com_amap_location_collection_CollectionConfig_FpsCollectorConfig> ascom_amap_location_collection_CollectionConfig_FpsCollectorConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_collection_CollectionConfig_FpsCollectorConfig', {'refId': ref.refId});
+  return com_amap_location_collection_CollectionConfig_FpsCollectorConfig()..refId = result;
+}
+
+Future<com_amap_location_uptunnel_core_db_DBProvider> ascom_amap_location_uptunnel_core_db_DBProvider(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_uptunnel_core_db_DBProvider', {'refId': ref.refId});
+  return com_amap_location_uptunnel_core_db_DBProvider()..refId = result;
+}
+
+Future<com_amap_location_security_Core> ascom_amap_location_security_Core(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_security_Core', {'refId': ref.refId});
+  return com_amap_location_security_Core()..refId = result;
+}
+
+Future<com_amap_location_BasicLocateManager> ascom_amap_location_BasicLocateManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_BasicLocateManager', {'refId': ref.refId});
+  return com_amap_location_BasicLocateManager()..refId = result;
+}
+
+Future<com_amap_location_common_database_AbstractContentProvider> ascom_amap_location_common_database_AbstractContentProvider(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_database_AbstractContentProvider', {'refId': ref.refId});
+  return com_amap_location_common_database_AbstractContentProvider()..refId = result;
+}
+
+Future<com_amap_location_common_HeaderConfig> ascom_amap_location_common_HeaderConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_HeaderConfig', {'refId': ref.refId});
+  return com_amap_location_common_HeaderConfig()..refId = result;
+}
+
+Future<com_amap_location_common_util_FileUtil> ascom_amap_location_common_util_FileUtil(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_util_FileUtil', {'refId': ref.refId});
+  return com_amap_location_common_util_FileUtil()..refId = result;
+}
+
+Future<com_amap_location_common_network_HttpRequest> ascom_amap_location_common_network_HttpRequest(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_network_HttpRequest', {'refId': ref.refId});
+  return com_amap_location_common_network_HttpRequest()..refId = result;
+}
+
+Future<com_amap_location_common_network_HttpResponse> ascom_amap_location_common_network_HttpResponse(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_network_HttpResponse', {'refId': ref.refId});
+  return com_amap_location_common_network_HttpResponse()..refId = result;
+}
+
+Future<com_amap_location_common_model_Adjacent_Borders> ascom_amap_location_common_model_Adjacent_Borders(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_Adjacent_Borders', {'refId': ref.refId});
+  return com_amap_location_common_model_Adjacent_Borders()..refId = result;
+}
+
+Future<com_amap_location_common_model_CellStatus_HistoryCell> ascom_amap_location_common_model_CellStatus_HistoryCell(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_CellStatus_HistoryCell', {'refId': ref.refId});
+  return com_amap_location_common_model_CellStatus_HistoryCell()..refId = result;
+}
+
+Future<com_amap_location_common_model_CellStatus> ascom_amap_location_common_model_CellStatus(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_CellStatus', {'refId': ref.refId});
+  return com_amap_location_common_model_CellStatus()..refId = result;
+}
+
+Future<com_amap_location_common_model_AmapLoc> ascom_amap_location_common_model_AmapLoc(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_AmapLoc', {'refId': ref.refId});
+  return com_amap_location_common_model_AmapLoc()..refId = result;
+}
+
+Future<com_amap_location_common_model_Adjacent> ascom_amap_location_common_model_Adjacent(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_Adjacent', {'refId': ref.refId});
+  return com_amap_location_common_model_Adjacent()..refId = result;
+}
+
+Future<com_amap_location_common_model_CellState> ascom_amap_location_common_model_CellState(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_CellState', {'refId': ref.refId});
+  return com_amap_location_common_model_CellState()..refId = result;
+}
+
+Future<com_amap_location_common_model_WiFi> ascom_amap_location_common_model_WiFi(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_WiFi', {'refId': ref.refId});
+  return com_amap_location_common_model_WiFi()..refId = result;
+}
+
+Future<com_amap_location_common_model_HisLocation> ascom_amap_location_common_model_HisLocation(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_HisLocation', {'refId': ref.refId});
+  return com_amap_location_common_model_HisLocation()..refId = result;
+}
+
+Future<com_amap_location_common_model_WifiStatus> ascom_amap_location_common_model_WifiStatus(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_WifiStatus', {'refId': ref.refId});
+  return com_amap_location_common_model_WifiStatus()..refId = result;
+}
+
+Future<com_amap_location_common_model_Adjacent_Neighbors> ascom_amap_location_common_model_Adjacent_Neighbors(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_Adjacent_Neighbors', {'refId': ref.refId});
+  return com_amap_location_common_model_Adjacent_Neighbors()..refId = result;
+}
+
+Future<com_amap_location_common_model_FPS> ascom_amap_location_common_model_FPS(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_model_FPS', {'refId': ref.refId});
+  return com_amap_location_common_model_FPS()..refId = result;
+}
+
+Future<com_amap_location_common_log_ALLog> ascom_amap_location_common_log_ALLog(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_log_ALLog', {'refId': ref.refId});
+  return com_amap_location_common_log_ALLog()..refId = result;
+}
+
+Future<com_amap_location_common_log_LogConfig> ascom_amap_location_common_log_LogConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_log_LogConfig', {'refId': ref.refId});
+  return com_amap_location_common_log_LogConfig()..refId = result;
+}
+
+Future<com_amap_location_common_log_LogConfig_Builder> ascom_amap_location_common_log_LogConfig_Builder(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_common_log_LogConfig_Builder', {'refId': ref.refId});
+  return com_amap_location_common_log_LogConfig_Builder()..refId = result;
+}
+
+Future<com_amap_location_BasicLocateConfig> ascom_amap_location_BasicLocateConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_BasicLocateConfig', {'refId': ref.refId});
+  return com_amap_location_BasicLocateConfig()..refId = result;
+}
+
+Future<com_amap_location_offline_OfflineManager> ascom_amap_location_offline_OfflineManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_offline_OfflineManager', {'refId': ref.refId});
+  return com_amap_location_offline_OfflineManager()..refId = result;
+}
+
+Future<com_amap_location_offline_OfflineConfig> ascom_amap_location_offline_OfflineConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_offline_OfflineConfig', {'refId': ref.refId});
+  return com_amap_location_offline_OfflineConfig()..refId = result;
+}
+
+Future<com_amap_location_offline_OfflineProvider> ascom_amap_location_offline_OfflineProvider(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_offline_OfflineProvider', {'refId': ref.refId});
+  return com_amap_location_offline_OfflineProvider()..refId = result;
+}
+
+Future<com_amap_location_offline_upload_UploadConfig> ascom_amap_location_offline_upload_UploadConfig(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_location_offline_upload_UploadConfig', {'refId': ref.refId});
+  return com_amap_location_offline_upload_UploadConfig()..refId = result;
+}
+
+Future<com_amap_opensdk_co_CoManager> ascom_amap_opensdk_co_CoManager(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_opensdk_co_CoManager', {'refId': ref.refId});
+  return com_amap_opensdk_co_CoManager()..refId = result;
+}
+
+Future<com_amap_openapi_Runnable> ascom_amap_openapi_Runnable(Ref ref) async {
+  final result = await MethodChannel('me.yohom/amap_location_fluttify').invokeMethod('RefClass::ascom_amap_openapi_Runnable', {'refId': ref.refId});
+  return com_amap_openapi_Runnable()..refId = result;
 }
 
 Future<com_amap_api_location_AMapLocationClient> ascom_amap_api_location_AMapLocationClient(Ref ref) async {
