@@ -159,7 +159,7 @@ class AmapLocation {
           (location, regeocode, error) async {
             if (!completer.isCompleted) {
               completer.complete(Location(
-                address: await regeocode.get_formattedAddress(),
+                address: await regeocode?.get_formattedAddress(),
                 latLng: LatLng(
                   await location.coordinate.then((it) => it.latitude),
                   await location.coordinate.then((it) => it.longitude),
